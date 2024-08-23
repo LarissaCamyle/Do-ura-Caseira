@@ -1,0 +1,8 @@
+header{
+    height: 6.8rem;
+    border-bottom: solid 3px var(--cor-vermelho);
+}
+
+.img-logo{
+    height: 4rem;
+}
