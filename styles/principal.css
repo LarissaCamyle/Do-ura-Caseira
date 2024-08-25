@@ -1,0 +1,89 @@
+.principal{
+    display: flex;
+    justify-content: center;
+    height: 60rem;
+    width: 100%;
+    left: auto;
+    right: auto;
+    flex-direction: column;
+}
+
+.principal-conteudo{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    left: auto;
+    right: auto;
+    flex-direction: column;
+}
+
+.principal-img {
+    margin-top: 9rem;
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: top;
+    left: 0;
+    background-image: url('/img/principal-telefone.png'); /* Imagem padrão */
+    display: flex;
+    z-index: 0;
+    opacity: 93%;
+}
+
+.principal-escrito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.75rem;
+    font-family: var(--fonte-Josefin);
+    font-weight: 500;
+    margin-top: -62rem;
+    z-index: 1;
+}
+
+.principal-escrito-destaque{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cor-vermelho);
+}
+
+.principal-bolo-img{
+    height: 15rem;
+    margin-top: -38rem;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 370px) {
+    .principal-img {
+        height: 90%;
+        width: 100%;
+    }
+    .principal-escrito{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .principal-img {
+        height: 150%;
+        width: 90%;
+    }
+    .principal-escrito{
+        margin-top: -65rem;
+    }
+}

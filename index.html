@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <!-- carrossel link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -18,26 +20,54 @@
     </header>
     
     <main>
-        <section class="principal"> 
-            <div class="principal-escrito">
-                <h1>Descubra a Doçura <br>em Cada Fatia!</h1>
-                <h1 class="principal-escrito-destaque">Bolos e doces<br>Artesanais Feitos<br>com Amor</h1>
+        <section class="principal">
+            <div class="principal-img"></div>
+            <div class="principal-conteudo"> 
+                <div class="principal-escrito">
+                    <h1>Descubra a Doçura<br>em Cada Fatia!</h1>
+                    <h1 class="principal-escrito-destaque">Bolos e doces<br>Artesanais Feitos<br>com Amor</h1>
+                </div>
             </div>
-            <img class="principal-imagem" src="/img/bolo-principal.png">
         </section>
+        <img class="principal-bolo-img" src="/img/bolo-principal.png">
 
         <section class="cardapio">
             <div class="cardapio-titulo">
                 <h2>Confira nosso</h2>
-                <h2>Delicioso Cardápio</h2>
+                <h2 class="cardapio-destaque">Delicioso Cardápio</h2>
             </div>
 
             <div class="cardapio-tipo">
-                <h3>Bolos</h3>
+                <h3 class="cardapio-tipo-selecionado">Bolos</h3>
                 <h3>Doces</h3>
             </div>
 
-            <div class="cardapio-carrosel"></div>
+            <div class="cardapio-carrossel">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-1.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-2.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-3.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-4.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-5.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-6.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-7.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-8.png"></div>
+                      <div class="swiper-slide"><img class="imagem-bolo" src="img/Bolo-9.png"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
 
             <div class="cardapio-sabores">
                 <div class="cardapio-sabores-tipo">
@@ -141,6 +171,8 @@
 
     </footer>
 
+    <!-- carrosel script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
