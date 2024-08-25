@@ -31,7 +31,7 @@
     background-image: url('/img/principal-telefone.png'); /* Imagem padrão */
     display: flex;
     z-index: 0;
-    opacity: 93%;
+    opacity: 0.6;
 }
 
 .principal-escrito{
