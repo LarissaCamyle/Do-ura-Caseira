@@ -2,7 +2,11 @@
 @import url('/styles/reset.css');
 @import url('/styles/header.css');
 @import url('/styles/principal.css');
+@import url('/styles/carrossel.css');
 @import url('/styles/cardapio.css');
+@import url('/styles/fabricacao.css');
+@import url('/styles/sobre.css');
+@import url('/styles/clientes.css');
 
 :root{
     --fonte-Lora : "Lora", serif;
@@ -33,7 +37,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     background-color: var(--cor-de-fundo);
     margin: 0;
     padding: 0;

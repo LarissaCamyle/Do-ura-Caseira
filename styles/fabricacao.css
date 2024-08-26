@@ -1,0 +1,35 @@
+.fabricacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fabricacao-titulo{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-Niconne);
+    text-align: center;
+    margin: 3rem;
+}
+
+.fabricacao-escrito{
+    text-align: center;
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-Laila);
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.fabricacao-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.card-fabricacao{
+    height: 17rem;
+}
+

@@ -1,6 +1,6 @@
-
+//CARROSSEL
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper-produtos', {
             //slide do meio maior
             effect: 'coverflow',
             //arrastar cm o cursor
@@ -26,3 +26,60 @@ document.addEventListener('DOMContentLoaded', function() {
             },
     });
 });
+
+
+//Troca de img no cardápio
+
+const ListaTipoCardapio = document.querySelectorAll('.cardapio-opcao');
+
+for(let i = 0 ; i < ListaTipoCardapio.length; i++){
+    const tipo = ListaTipoCardapio[i];
+    const bolo = ListaTipoCardapio[0];
+    const doce = ListaTipoCardapio[1];
+
+    tipo.onclick = function (){
+        if(tipo === ListaTipoCardapio[0]){
+            doce.classList.remove('cardapio-tipo-selecionado');
+            bolo.classList.add('cardapio-tipo-selecionado');
+            TrocaImagem("Bolo");
+        }
+        if(tipo === ListaTipoCardapio[1]){
+            bolo.classList.remove('cardapio-tipo-selecionado');
+            doce.classList.add('cardapio-tipo-selecionado');
+            TrocaImagem("Doce");
+        }
+    }
+}
+
+const ListaImagens = document.querySelectorAll('.imagem-bolo');
+
+function TrocaImagem (tipo){
+    for(let i = 0 ; i < ListaImagens.length; i++){
+        var caminho = `/img/${tipo}-${i+1}.png`
+        ListaImagens[i].src = caminho;
+    }
+}
+
+//CARROSSEL Clientes
+const swiper = new Swiper('.swiper-clientes', {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    loop: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 400,
+        modifier: 1,
+        slideShadows: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+

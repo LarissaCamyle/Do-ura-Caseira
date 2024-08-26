@@ -12,10 +12,11 @@
     <header>
 		<img class="img-logo" src="/img/logo.png" alt="logo-doçura-caseira">
         <div class="header-links">
-            <a>CARDÁPIO</a>
-            <a>SOBRE</a>
-            <a>CLIENTES</a>
-            <a>INFORMAÇÕES</a>
+            <a>Cardápio</a>
+            <a>Fabricação</a>
+            <a>Sobre</a>
+            <a>Clientes</a>
+            <a>Informações</a>
         </div>
     </header>
     
@@ -30,6 +31,10 @@
             </div>
         </section>
         <img class="principal-bolo-img" src="/img/bolo-principal.png">
+        <button class="btn-principal">
+            <img class="imagem-btn-principal" src="/img/whats-branco.png">
+            <h1>Compre pelo WhatsApp!</h1>
+        </button>
 
         <section class="cardapio">
             <div class="cardapio-titulo">
@@ -38,12 +43,12 @@
             </div>
 
             <div class="cardapio-tipo">
-                <h3 class="cardapio-tipo-selecionado">Bolos</h3>
-                <h3>Doces</h3>
+                <h3 class="cardapio-tipo-selecionado cardapio-opcao">Bolos</h3>
+                <h3 class="cardapio-opcao">Doces</h3>
             </div>
 
             <div class="cardapio-carrossel">
-                <div class="swiper">
+                <div class="swiper swiper-produtos">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
@@ -63,14 +68,11 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                  
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                   </div>
             </div>
 
             <div class="cardapio-sabores">
-                <div class="cardapio-sabores-tipo">
+                <div class="cardapio-sabores-bolo">
                     <h3 class="cardapio-sabores-titulo">Sabores de Bolo</h3>
                     <h3>-Chocolate</h3>
                     <h3>-Baunilha</h3>
@@ -82,7 +84,7 @@
                     <h3>-Nozes</h3>
                     <h3>-Pistache</h3>
                 </div>
-                <div class="cardapio-sabores-tipo">
+                <div class="cardapio-sabores-doce">
                     <h3 class="cardapio-sabores-titulo">Sabores de Doce</h3>
                     <h3>-Brigadeiro Tradicional</h3>
                     <h3>-Beijinho</h3>
@@ -99,31 +101,54 @@
         </section>
 
         <section class="fabricacao">
-            <h3 class="titulo">Fabricação</h3>
+            <h3 class="fabricacao-titulo">Fabricação</h3>
             <h2 class="fabricacao-escrito">Fazemos bolos artesanais e doces com especialização, utilizando técnicas tradicionais e ingredientes de alta qualidade. Cada criação é única, destacando-se tanto pelo sabor quanto pela apresentação, proporcionando experiências deliciosas e memoráveis.</h2>
 
             <div class="fabricacao-cards">
-                <img src="/img/card1.png">
-                <img src="/img/card2.png">
-                <img src="/img/card3.png">
+                <img class="card-fabricacao" src="/img/card1.png">
+                <img class="card-fabricacao" src="/img/card2.png">
+                <img class="card-fabricacao" src="/img/card3.png">
             </div>
         </section>
 
         <section class="sobre">
-            <h3 class="titulo">Sobre</h3>
+            <h3 class="sobre-titulo">Sobre</h3>
             <div class="sobre-conteudo">
                 <img src="/img/confeiteira.png">
                 <h3 class="sobre-escrito">Desde criança, sempre fui fascinada pela confeitaria, observando minha avó transformar ingredientes simples em doces maravilhas. Foi ali que nasceu minha paixão por criar bolos e doces artesanais.</h3>
                 <h3 class="sobre-escrito">Com o tempo, estudei técnicas e mergulhei na arte de fazer doces que não só encantam pelo sabor, mas também carregam amor e cuidado em cada detalhe. Ver minhas criações fazendo parte de momentos especiais na vida das pessoas é o que me motiva diariamente.</h3> 
                 <h3 class="sobre-escrito">Cada doce que faço reflete a história que comecei na cozinha da minha avó e que continuo com dedicação e carinho até hoje.</h3>  
-            </div>
         </section>
 
         <section class="clientes">
-            <h3 class="titulo">Clientes</h3>
-            <img src="/img/cliente1.jpg">
-            <h3 class="clientes-titulo">Maria Santos</h3>
-            <h3 class="clientes-escrito">Minha família ficou encantada com os bolos e doces artesanais. Todos elogiaram a qualidade, o sabor autêntico e a apresentação impecável. Cada detalhe foi apreciado, e os sabores conquistaram a todos, tornando nossas celebrações ainda mais especiais. Sem dúvida, uma escolha que agradou a todos!</h3>
+            <h3 class="clientes-titulo">Clientes</h3>
+            <div class="swiper swiper-clientes">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                        <img src="/img/cliente1.jpg">
+                        <h3 class="clientes-nome">Maria Santos</h3>
+                        <h3 class="clientes-escrito">Minha família ficou encantada com os bolos e doces artesanais. Todos elogiaram a qualidade, o sabor autêntico e a apresentação impecável. Cada detalhe foi apreciado, e os sabores conquistaram a todos, tornando nossas celebrações ainda mais especiais. Sem dúvida, uma escolha que agradou a todos!</h3>
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="/img/cliente2.jpg">
+                        <h3 class="clientes-nome">Maria Santos</h3>
+                        <h3 class="clientes-escrito">Minha família ficou encantada com os bolos e doces artesanais. Todos elogiaram a qualidade, o sabor autêntico e a apresentação impecável. Cada detalhe foi apreciado, e os sabores conquistaram a todos, tornando nossas celebrações ainda mais especiais. Sem dúvida, uma escolha que agradou a todos!</h3>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/cliente2.jpg">
+                    <h3 class="clientes-nome">Maria Santos</h3>
+                    <h3 class="clientes-escrito">Minha família ficou encantada com os bolos e doces artesanais. Todos elogiaram a qualidade, o sabor autêntico e a apresentação impecável. Cada detalhe foi apreciado, e os sabores conquistaram a todos, tornando nossas celebrações ainda mais especiais. Sem dúvida, uma escolha que agradou a todos!</h3>
+              </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
         </section>
 
         <section class="info">
