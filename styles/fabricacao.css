@@ -17,7 +17,8 @@
     font-size: var(--tamanho-fonte);
     font-family: var(--fonte-Laila);
     font-weight: 500;
-    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .fabricacao-cards{

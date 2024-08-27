@@ -29,6 +29,6 @@
 .sobre-escrito{
     text-align: center;
     margin: 0.5rem 2.5rem 0rem 2.5rem;
-    font-size: 1.1rem;
-    font-family: var(--fonte-Lancelot);
+    font-size: var(--fonte-tamanho);
+    font-family: var(--fonte-Laila);
 }

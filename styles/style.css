@@ -7,6 +7,7 @@
 @import url('/styles/fabricacao.css');
 @import url('/styles/sobre.css');
 @import url('/styles/clientes.css');
+@import url('/styles/informacoes.css');
 
 :root{
     --fonte-Lora : "Lora", serif;
@@ -22,7 +23,7 @@
     --cor-header: #FFABB8;
 
     --tamanho-fonte-titulo: 2rem;
-    --tamanho-fonte: 0.93rem;
+    --tamanho-fonte: 1rem;
 }
 
 img{

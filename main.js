@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            autoplay: {
+                delay: 3000, // 1 segundo
+                disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+            },
     });
 });
 
@@ -80,6 +84,10 @@ const swiper = new Swiper('.swiper-clientes', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000, // 1 segundo
+        disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
     },
 });
 
