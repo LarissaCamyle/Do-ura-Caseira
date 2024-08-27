@@ -27,14 +27,22 @@ header{
     font-weight: 500;
     display: flex;
     justify-content: center;
-    gap: 1.1rem;
     flex-wrap: wrap;
     font-family: var(--fonte-Lancelot);
 }
 
-@media screen and (max-width: 395px) {
+.header-links a{
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    margin-top: 0.7rem;
+}
+
+@media screen and (max-width: 420px) {
     header{
-        height: 7.4rem;
+        height: 7.5rem;
+    }
+    .img-logo{
+        margin-bottom: 0rem;
     }
 }
 

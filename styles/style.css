@@ -8,6 +8,7 @@
 @import url('/styles/sobre.css');
 @import url('/styles/clientes.css');
 @import url('/styles/informacoes.css');
+@import url('/styles/footer.css');
 
 :root{
     --fonte-Lora : "Lora", serif;
@@ -34,7 +35,7 @@ body{
     background-size: cover; /* Ajusta a imagem para cobrir toda a área do body */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center top; /* Centraliza a imagem */
-    height: 5320px; /* Define a altura do body para 5320px */
+    height: 5450px; /* Define a altura do body para 5320px */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //arrastar cm o cursor
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: 3,
+            slidesPerView: 2,
             //loop das imagens
             loop: true,
             coverflowEffect: {
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
             },
     });
 });
-
 
 //Troca de img no cardápio
 

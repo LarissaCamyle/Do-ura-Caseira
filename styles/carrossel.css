@@ -1,6 +1,6 @@
 .cardapio{
     display: flex;
-    margin-top: 8rem;
+    margin-top: -1rem;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
 
 .cardapio-carrossel{
     height: 15rem;
-    width: 100%;
+    width: 90%;
     display: flex;
     box-sizing:border-box;
     margin-bottom: 2rem;
@@ -101,4 +101,5 @@
         height: 8rem;
     }
 }
+
 

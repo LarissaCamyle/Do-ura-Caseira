@@ -1,54 +1,27 @@
 .principal{
     display: flex;
     justify-content: center;
-    height: 60rem;
+    height: 50rem;
     width: 100%;
-    left: auto;
-    right: auto;
     flex-direction: column;
 }
 
 .principal-conteudo{
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    left: auto;
-    right: auto;
     flex-direction: column;
-}
-
-.principal-img {
-    margin-top: 9rem;
-    height: 100%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: top;
-    left: 0;
-    background-image: url('/img/principal-telefone.png'); /* Imagem padrão */
-    display: flex;
-    z-index: 0;
-    opacity: 0.6;
 }
 
 .principal-escrito{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
     font-size: 1.75rem;
     font-family: var(--fonte-Josefin);
     font-weight: 500;
-    margin-top: -67rem;
-    z-index: 1;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 .principal-escrito-destaque{
@@ -59,7 +32,6 @@
 
 .principal-bolo-img{
     height: 15rem;
-    margin-top: -41rem;
     display: flex;
     z-index: 3;
     position: relative;
@@ -83,7 +55,8 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5rem;
+    position: absolute;
+    margin-top: 48.5rem;
 }
 
 .imagem-btn-principal{
@@ -92,13 +65,6 @@
 
 
 @media screen and (max-width: 370px) {
-    .principal-img {
-        height: 90%;
-        width: 100%;
-    }
-    .principal-bolo-img{
-        margin-top: -43rem;
-    }
     .principal-escrito{
         font-size: 1.5rem;
     }
@@ -107,12 +73,28 @@
     }
 }
 
-@media screen and (min-width: 460px) {
-    .principal-img {
-        height: 150%;
-        width: 90%;
+@media screen and (min-width: 510px) {
+    .principal-conteudo{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-principal{
+        position:inherit;
+        margin-top: 1.5rem;
+    }
+    .principal-bolo-img{
+        height: 18rem;
+        margin-left: inherit;
+        margin-right: inherit;
     }
     .principal-escrito{
-        margin-top: -73rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .principal-escrito-destaque{
+        margin-left: -1rem;
+    }
+    .btn-principal{
+        margin-left: inherit;
     }
 }
