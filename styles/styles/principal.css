@@ -1,0 +1,100 @@
+.principal{
+    display: flex;
+    justify-content: center;
+    height: 50rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.principal-conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal-escrito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: var(--fonte-Josefin);
+    font-weight: 500;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.principal-escrito-destaque{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cor-vermelho);
+}
+
+.principal-bolo-img{
+    height: 15rem;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal{
+    background: #FA3347;
+    width: 13.7rem;
+    height: 4.2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--fonte-Josefin);
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-top: 48.5rem;
+}
+
+.imagem-btn-principal{
+    height: 2.4rem;
+}
+
+
+@media screen and (max-width: 370px) {
+    .principal-escrito{
+        font-size: 1.5rem;
+    }
+    .btn-principal{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    .principal-conteudo{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-principal{
+        position:inherit;
+        margin-top: 1.5rem;
+    }
+    .principal-bolo-img{
+        height: 18rem;
+        margin-left: inherit;
+        margin-right: inherit;
+    }
+    .principal-escrito{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .principal-escrito-destaque{
+        margin-left: -1rem;
+    }
+    .btn-principal{
+        margin-left: inherit;
+    }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kiwi+Maru&family=Laila:wght@300;400;500;600;700&family=Lancelot&family=Lora:ital,wght@0,400..700;1,400..700&family=Niconne&display=swap');
+@import url('/styles/reset.css');
+@import url('/styles/header.css');
+@import url('/styles/principal.css');
+@import url('/styles/carrossel.css');
+@import url('/styles/cardapio.css');
+@import url('/styles/fabricacao.css');
+@import url('/styles/sobre.css');
+@import url('/styles/clientes.css');
+@import url('/styles/informacoes.css');
+@import url('/styles/footer.css');
+
+:root{
+    --fonte-Lora : "Lora", serif;
+    --fonte-Laila : "Laila", serif;
+    --fonte-KiwiMaru: "Kiwi Maru", serif;
+    --fonte-Niconne: "Niconne", cursive;
+    --fonte-Josefin : "Josefin Slab", serif;
+    --fonte-Lancelot : "Lancelot", serif;
+
+    --cor-vermelho: #83080A;
+    --cor-fonte: #2F0000;
+    --cor-de-fundo: #FFCBCB;
+    --cor-header: #FFABB8;
+
+    --tamanho-fonte-titulo: 2rem;
+    --tamanho-fonte: 1rem;
+}
+
+img{
+    height: 10px;
+}
+
+body{
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do body */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center top; /* Centraliza a imagem */
+    height: 5450px; /* Define a altura do body para 5320px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    background-image: opacity 0.5;
+    color: var(--cor-fonte);
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 30px; /* Altura da barra de rolagem para elementos horizontais */
+}
+::-webkit-scrollbar-track {
+    background-color: var(--cor-de-fundo); /* Cor de fundo da barra de rolagem */
+}
+
+/* Estiliza o "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-vermelho); /* Cor do polegar (thumb) da barra de rolagem */
+    border-radius: 10px; /* Arredonda as bordas do thumb */
+    border: 3px solid var(--cor-de-fundo); /* Adiciona uma borda para combinar com o track */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #660606; /* Cor ao passar o mouse por cima do thumb */
+}
+
+/* Estiliza o canto da barra de rolagem para elementos com ambos scrolls */
+::-webkit-scrollbar-corner {
+    background-color: var(--cor-de-fundo); /* Cor do canto onde as barras de rolagem horizontal e vertical se encontram */
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/*Fundo de tela*/
+@media screen and (max-width: 600px) {
+    body, html{
+        background-image: url('/img/fundo-telefone4k.png');
+    }
+}
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+    body, html{
+        background-image: url('/img/fundo-tablet4k.png');
+    }
+}
+@media screen and (min-width: 1100px) {
+    body, html{
+        background-image: url('/img/fundo-4k.png');
+    }
+}
+
+/* Tamanho da fonte */
+
+
+

@@ -1,0 +1,105 @@
+.cardapio{
+    display: flex;
+    margin-top: -1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardapio-titulo{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-Niconne);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.cardapio-destaque{
+    color: var(--cor-vermelho);
+}
+
+.cardapio-tipo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-Lancelot);
+    display: flex;
+    gap: 10rem ;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cardapio-tipo-selecionado{
+    border-bottom: 3px solid var(--cor-vermelho);
+    width: 5rem;
+    color: var(--cor-vermelho);
+}
+
+.cardapio-carrossel{
+    height: 15rem;
+    width: 90%;
+    display: flex;
+    box-sizing:border-box;
+    margin-bottom: 2rem;
+}
+
+.swiper-slide{
+    display: flex;
+    box-sizing:border-box;
+}
+
+.imagem-bolo{
+    height: 10rem;
+    margin-top: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CARROSSEL */
+/* Bolinhas indicando posicao nas img */
+.swiper-pagination {
+    position: absolute; /* Posiciona a paginação no local desejado */
+    bottom: 10px; /* Ajuste a posição conforme necessário */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Garante que a paginação esteja acima de outros elementos */
+}
+.swiper-pagination-bullet {
+    background-color: var(--cor-fonte) !important;
+    opacity: 0.4 !important;
+    width: 9px !important;
+    height: 9px !important;
+    margin: 0 5px !important;
+    transition: background-color 0.3s, transform 0.3s !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--cor-vermelho) !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+/* setas para passar img */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: var(--cor-vermelho); /* Define a cor do ícone dentro da seta (branco, por exemplo) */
+    font-size: 1.5rem !important; /* Ajusta o tamanho do ícone */
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 var(--cor-de-fundo),  
+     1px -1px 0 var(--cor-de-fundo),
+    -1px  1px 0 var(--cor-de-fundo),
+     1px  1px 0 var(--cor-de-fundo); 
+}
+
+
+@media screen and (max-width: 370px) {
+    .cardapio-carrossel{
+        height: 13rem;
+        margin-bottom: 3rem;
+    }
+    .imagem-bolo{
+        height: 8rem;
+    }
+}
+
+

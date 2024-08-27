@@ -1,0 +1,38 @@
+footer{
+    height: 30rem;
+    width: 100%;
+    background-color: #D63E4D ;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer{
+    text-align: left;
+    margin-left: 0.8rem;
+    width: 40%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-family: var(--fonte-KiwiMaru);
+}
+
+.footer2{
+    text-align: center;
+    width: 95%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-family: var(--fonte-KiwiMaru);
+}
+
+.footer-titulo{
+    font-size: 1rem;
+}
+
+.footer-rede-social{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 2.5rem;
+}

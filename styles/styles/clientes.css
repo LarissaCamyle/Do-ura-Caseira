@@ -1,0 +1,41 @@
+.clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clientes-titulo{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-Niconne);
+    text-align: center;
+    margin: 3rem;
+    margin-bottom: 0px;
+}
+
+.swiper-clientes {
+    width: 100%;
+    height: 24rem;
+}
+
+.swiper-clientes .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper-clientes img{
+    height: 7rem;
+    margin: 2rem;
+    border-radius: 50%;
+    border: solid 4px var(--cor-vermelho);
+}
+
+.clientes-escrito{
+    font-size: var(--fonte-tamanho);
+    font-family: var(--fonte-Laila);
+    margin: 1rem 4rem 0rem 4rem;
+    font-weight: 500;
+}
