@@ -102,7 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
         while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
         links.forEach((link) => link.classList.remove('header-destaque'));
-        links[index].classList.add('header-destaque');
+        // Adiciona a classe de destaque apenas ao link correspondente
+        if (links[index]) {
+            links[index].classList.add('header-destaque');
+        }
     }
 
     setActiveLink();
