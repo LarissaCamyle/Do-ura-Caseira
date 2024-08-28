@@ -1,3 +1,8 @@
+.info{
+    width: 100%;
+    height: 20rem;
+}
+
 .info-titulo{
     font-size: var(--tamanho-fonte-titulo);
     font-family: var(--fonte-Niconne);
@@ -90,9 +95,26 @@
     font-family: var(--fonte-Lora);
     font-weight: bolder;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
+
+.info2-btn:hover{
+    color: #F9374A;
+    font-size: 1.4rem;
+    padding: 1.1rem;
+}
+
 
 .info2-img{
     height: 4rem;
     margin: 0rem 0rem 0rem 0rem;
+}
+
+@media screen and (min-width: 600px) {
+    .info-titulo{
+        margin-top: 6rem;
+    }
+    .info1{
+        flex-direction: row;
+    }
 }

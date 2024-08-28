@@ -27,24 +27,26 @@
     --tamanho-fonte: 1rem;
 }
 
-img{
-    height: 10px;
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     background-size: cover; /* Ajusta a imagem para cobrir toda a área do body */
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-position: center top; /* Centraliza a imagem */
-    height: 5450px; /* Define a altura do body para 5320px */
+    background-position: center top; /* Centraliza a imagem */ /* Define a altura do body para 5320px */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--cor-de-fundo);
     margin: 0;
     padding: 0;
+    flex-direction: column;
     position: relative; 
     background-image: opacity 0.5;
     color: var(--cor-fonte);
+    min-height: 100vh;
+    height: 5300px;
 }
 
 
@@ -77,6 +79,19 @@ main{
     background-color: var(--cor-de-fundo); /* Cor do canto onde as barras de rolagem horizontal e vertical se encontram */
 }
 
+/* Animacao de fade in */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -84,7 +99,7 @@ main{
     }
 }
 
-/*Fundo de tela*/
+/*Fundo de tela img*/
 @media screen and (max-width: 600px) {
     body, html{
         background-image: url('/img/fundo-telefone4k.png');
@@ -101,7 +116,34 @@ main{
     }
 }
 
-/* Tamanho da fonte */
+/* Tamanho da tela */
+ @media screen and (max-width: 600px) {
+    body{
+        height: 5400px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 770px) {
+    body{
+        height: 4700px;
+    }
+}
+@media screen and (min-width: 770px) {
+    body{
+        height: 4500px;
+    }
+} 
+@media screen and (min-width: 800px) {
+    body{
+        height: 4300px;
+    }
+} 
 
+/* Tamanho da fonte */
+@media screen and (min-width: 700px) {
+    :root{
+        --tamanho-fonte-titulo: 2.4rem;
+        --tamanho-fonte: 1rem;
+    }
+}
 
 

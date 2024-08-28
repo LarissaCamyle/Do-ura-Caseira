@@ -12,16 +12,16 @@
     <header>
 		<img class="img-logo" src="/img/logo.png" alt="logo-doçura-caseira">
         <div class="header-links">
-            <a>Cardápio</a>
-            <a>Fabricação</a>
-            <a>Sobre</a>
-            <a>Clientes</a>
-            <a>Informações</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#fabricacao">Fabricação</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#info">Informações</a>
         </div>
     </header>
     
     <main>
-        <section class="principal">
+        <section id="principal" class="principal">
             <div class="principal-conteudo"> 
                 <div class="principal-escrito">
                     <h1> Descubra a Doçura<br> em Cada Fatia!</h1>
@@ -33,10 +33,11 @@
                 </div>
                 <img class="principal-bolo-img" src="/img/bolo-principal.png">
             </div>
+            <div id="cardapio" class="section-selecionado"></div>
         </section>
 
-
-        <section class="cardapio">
+        
+        <section class="cardapio fade-in">
             <div class="cardapio-titulo">
                 <h2>Confira nosso</h2>
                 <h2 class="cardapio-destaque">Delicioso Cardápio</h2>
@@ -71,7 +72,7 @@
                   </div>
             </div>
 
-            <div class="cardapio-sabores">
+            <div class="cardapio-sabores fade-in">
                 <div class="cardapio-sabores-bolo">
                     <h3 class="cardapio-sabores-titulo">Sabores de Bolo</h3>
                     <h3>-Chocolate</h3>
@@ -95,12 +96,14 @@
                     <h3>-Brigadeiro de Paçoca</h3>
                     <h3>-Brigadeiro de Pistache</h3>
                     <h3>-Palha italiana</h3>
+                    <div class="section-selecionado" id="fabricacao"></div>
                 </div>
             </div>
-            
+
         </section>
 
-        <section class="fabricacao">
+        
+        <section class="fabricacao fade-in">
             <h3 class="fabricacao-titulo">Fabricação</h3>
             <h2 class="fabricacao-escrito">Fazemos bolos artesanais e doces com especialização, utilizando técnicas tradicionais e ingredientes de alta qualidade. Cada criação é única, destacando-se tanto pelo sabor quanto pela apresentação, proporcionando experiências deliciosas e memoráveis.</h2>
 
@@ -111,16 +114,21 @@
             </div>
         </section>
 
-        <section class="sobre">
+        <div class="section-selecionado" id="sobre"></div>
+        <section class="sobre fade-in">
             <h3 class="sobre-titulo">Sobre</h3>
             <div class="sobre-conteudo">
                 <img src="/img/confeiteira.png">
-                <h3 class="sobre-escrito">Desde criança, sempre fui fascinada pela confeitaria, observando minha avó transformar ingredientes simples em doces maravilhas. Foi ali que nasceu minha paixão por criar bolos e doces artesanais.</h3>
-                <h3 class="sobre-escrito">Com o tempo, estudei técnicas e mergulhei na arte de fazer doces que não só encantam pelo sabor, mas também carregam amor e cuidado em cada detalhe. Ver minhas criações fazendo parte de momentos especiais na vida das pessoas é o que me motiva diariamente.</h3> 
-                <h3 class="sobre-escrito">Cada doce que faço reflete a história que comecei na cozinha da minha avó e que continuo com dedicação e carinho até hoje.</h3>  
+                <div class="sobre-conteudo-escrito">
+                    <h3 class="sobre-escrito">Desde criança, sempre fui fascinada pela confeitaria, observando minha avó transformar ingredientes simples em doces maravilhas. Foi ali que nasceu minha paixão por criar bolos e doces artesanais.</h3>
+                    <h3 class="sobre-escrito">Com o tempo, estudei técnicas e mergulhei na arte de fazer doces que não só encantam pelo sabor, mas também carregam amor e cuidado em cada detalhe. Ver minhas criações fazendo parte de momentos especiais na vida das pessoas é o que me motiva diariamente.</h3> 
+                    <h3 class="sobre-escrito">Cada doce que faço reflete a história que comecei na cozinha da minha avó e que continuo com dedicação e carinho até hoje.</h3>  
+                </div>
+                <div class="section-selecionado" id="clientes"></div>
         </section>
 
-        <section class="clientes">
+        
+        <section class="clientes fade-in">
             <h3 class="clientes-titulo">Clientes</h3>
             <div class="swiper swiper-clientes">
                 <!-- Additional required wrapper -->
@@ -156,7 +164,8 @@
               </div>
         </section>
 
-        <section class="info">
+        <div class="section-selecionado" id="info"></div>
+        <section class="info fade-in">
             <h1 class="info-titulo">Mais Informações</h1>
             <div class="info1">
                 <div class="info1-div">

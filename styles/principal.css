@@ -1,8 +1,9 @@
 .principal{
     display: flex;
     justify-content: center;
-    height: 50rem;
+    height: 42rem;
     width: 100%;
+    margin-top: 4rem;
     flex-direction: column;
 }
 
@@ -59,6 +60,13 @@
     margin-top: 48.5rem;
 }
 
+.btn-principal:hover{
+    background: #ff1a31;
+    transform: scale(1.1);
+    color: white;
+    font-size: scale(1.1);
+}
+
 .imagem-btn-principal{
     height: 2.4rem;
 }
@@ -66,6 +74,7 @@
 
 @media screen and (max-width: 370px) {
     .principal-escrito{
+        margin-top: 1rem;
         font-size: 1.5rem;
     }
     .btn-principal{
@@ -96,5 +105,43 @@
     }
     .btn-principal{
         margin-left: inherit;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .principal-conteudo{
+        gap: 5rem;
+    }
+    .principal-escrito{
+        font-size: 2.2rem;
+        align-items: start;
+    }
+    .btn-principal{
+        width: 22rem;
+        text-align: start;
+    }
+    .principal-escrito-destaque{
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .principal-conteudo{
+        margin-top: -2rem;
+        gap: 7rem;
+    }
+    .principal-escrito{
+
+        font-size: 2.8rem;
+    }
+    .btn-principal{
+        width: 25rem;
+        font-size: 1.8rem;
+    }
+    .principal-escrito-destaque{
+        margin-left: 0rem;
+    }
+    .principal-bolo-img{
+        height: 22rem;
     }
 }

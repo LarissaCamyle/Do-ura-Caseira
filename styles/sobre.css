@@ -23,7 +23,7 @@
 
 .sobre-conteudo img{
     height: 20rem;
-    margin-bottom: 2rem;
+
 }
 
 .sobre-escrito{
@@ -31,4 +31,45 @@
     margin: 0.5rem 2.5rem 0rem 2.5rem;
     font-size: var(--fonte-tamanho);
     font-family: var(--fonte-Laila);
+}
+
+@media screen and (min-width: 600px) {
+    .sobre-conteudo img{
+        margin-left: 1rem;
+    }
+    .sobre-conteudo{
+        gap: 1rem;
+        align-items: center;
+        flex-direction: row;
+    }
+    .sobre-conteudo-escrito{
+        flex-direction: column;
+    }
+    .sobre-escrito{
+        margin: 0.5rem 1rem 0rem 0rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .sobre-conteudo{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .sobre-conteudo{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .sobre-conteudo{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .sobre-conteudo{
+        width: 50%;
+    }
 }

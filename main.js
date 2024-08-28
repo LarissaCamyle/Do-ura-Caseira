@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//Troca de img no cardápio
+//Troca de img no cardápio -----------------------------------------------------
 
 const ListaTipoCardapio = document.querySelectorAll('.cardapio-opcao');
 
@@ -63,7 +63,7 @@ function TrocaImagem (tipo){
     }
 }
 
-//CARROSSEL Clientes
+//CARROSSEL Clientes -----------------------------------------------------
 const swiper = new Swiper('.swiper-clientes', {
     grabCursor: true,
     centeredSlides: true,
@@ -90,3 +90,46 @@ const swiper = new Swiper('.swiper-clientes', {
     },
 });
 
+
+// Header destaque-----------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.header-links a');
+    const sections = document.querySelectorAll('.section-selecionado');
+
+    function setActiveLink() {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        links.forEach((link) => link.classList.remove('header-destaque'));
+        links[index].classList.add('header-destaque');
+    }
+
+    setActiveLink();
+    window.addEventListener('scroll', setActiveLink);
+});
+
+
+// animacao fade in -----------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.fade-in');
+
+    // Função de callback do Intersection Observer
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    // Configuração do Intersection Observer
+    const observer = new IntersectionObserver(observerCallback, {
+        threshold: 0.1 // Quando 10% do elemento está visível
+    });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});

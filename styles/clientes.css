@@ -31,6 +31,7 @@
     margin: 2rem;
     border-radius: 50%;
     border: solid 4px var(--cor-vermelho);
+    margin-bottom: 1rem;
 }
 
 .clientes-escrito{
@@ -38,4 +39,16 @@
     font-family: var(--fonte-Laila);
     margin: 1rem 4rem 0rem 4rem;
     font-weight: 500;
+}
+
+@media screen and (min-width: 900px) {
+    .swiper-clientes {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .swiper-clientes {
+        width: 60%;
+    }
 }

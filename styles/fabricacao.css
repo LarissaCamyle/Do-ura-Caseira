@@ -31,6 +31,15 @@
 }
 
 .card-fabricacao{
-    height: 17rem;
+    height: 15rem;
 }
 
+@media screen and (min-width: 600px) {
+    .fabricacao-cards{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .fabricacao-escrito{
+        width: 50%;
+    }
+}

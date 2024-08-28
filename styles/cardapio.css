@@ -43,8 +43,13 @@
 }
 
 @media screen and (max-width: 360px) {
+    .cardapio-sabores-bolo, 
+    .cardapio-sabores-doce{
+        gap: 0.9rem;
+        font-size: 0.8rem;
+    }
     .cardapio-sabores-titulo{
-        margin-top: 3rem;
+        margin-top: 4rem;
         margin-bottom: 0rem;
         font-size: 1.1rem;
     }
@@ -60,4 +65,20 @@
         margin-top: 2.5rem;
         font-size: 1.3rem;
     }
+}
+
+@media screen and (min-width: 770px) {
+    .cardapio-sabores{
+        flex-direction: row;
+    }
+    .cardapio-sabores{
+        height: 35rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .cardapio-sabores{
+        width: 70%;
+    }
+
 }
