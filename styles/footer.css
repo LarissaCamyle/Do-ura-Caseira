@@ -42,6 +42,23 @@ footer{
     height: 2.8rem;
 }
 
+.btn-whatsapp-fixo{
+    position: fixed; /* Fixa o header na posição especificada */
+    bottom: 0; /* Fixa o header no topo da página */
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #FA3347;
+    background-image: url('/img/whats-branco.png');
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center; 
+    margin: 0.5rem;
+    z-index: 3;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.199);
+}
+
 @media screen and (max-width: 350px) {
     .footer{
         font-size: 0.7rem;

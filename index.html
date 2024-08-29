@@ -26,14 +26,14 @@
                 <div class="principal-escrito">
                     <h1> Descubra a Doçura<br> em Cada Fatia!</h1>
                     <h1 class="principal-escrito-destaque">Bolos e doces<br>Artesanais Feitos<br>com Amor</h1>
-                    <button class="btn-principal">
+                    <button onclick="window.location.href='https://wa.link/f3d5m1';" class="btn-principal">
                         <img class="imagem-btn-principal" src="/img/whats-branco.png">
                         <h1>Compre pelo WhatsApp!</h1>
                     </button>
                 </div>
                 <img class="principal-bolo-img" src="/img/bolo-principal.png">
             </div>
-            <div id="cardapio" class="section-selecionado"></div>
+            <div id="cardapio"></div>
         </section>
 
         
@@ -96,13 +96,11 @@
                     <h3>-Brigadeiro de Leite Ninho</h3>
                     <h3>-Brigadeiro de Nutella</h3>
                     <h3>-Brigadeiro de Paçoca</h3>
-                    <h3>-Brigadeiro de Pistache</h3>
-                    <h3>-Palha italiana</h3>
+                    <h3 id="fabricacao">-Brigadeiro de Pistache</h3>
+                    <h3 >-Palha italiana</h3>
                 </div>
             </div>
-
         </section>
-        <div class="section-selecionado" id="fabricacao"></div>
         
         <section class="fabricacao fade-in">
             <h3 class="fabricacao-titulo">Fabricação</h3>
@@ -112,10 +110,11 @@
                 <img class="card-fabricacao" src="/img/card1.png">
                 <img class="card-fabricacao" src="/img/card2.png">
                 <img class="card-fabricacao" src="/img/card3.png">
+                <div id="sobre"></div>
             </div>
+
         </section>
 
-        <div class="section-selecionado" id="sobre"></div>
         <section class="sobre fade-in">
             <h3 class="sobre-titulo">Sobre</h3>
             <div class="sobre-conteudo">
@@ -125,10 +124,10 @@
                     <h3 class="sobre-escrito">Com o tempo, estudei técnicas e mergulhei na arte de fazer doces que não só encantam pelo sabor, mas também carregam amor e cuidado em cada detalhe. Ver minhas criações fazendo parte de momentos especiais na vida das pessoas é o que me motiva diariamente.</h3> 
                     <h3 class="sobre-escrito">Cada doce que faço reflete a história que comecei na cozinha da minha avó e que continuo com dedicação e carinho até hoje.</h3>  
                 </div>
-                <div class="section-selecionado" id="clientes"></div>
+                <div id="clientes"></div>
         </section>
 
-        
+
         <section class="clientes fade-in">
             <h3 class="clientes-titulo">Clientes</h3>
             <div class="swiper swiper-clientes">
@@ -155,17 +154,20 @@
                         <h3 class="clientes-escrito">Lurdes Silva</h3>
                         <h3 class="clientes-escrito">Os doces foram o destaque da festa. Todos adoraram!</h3>
                     </div>
+
                 </div>
+
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
               
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+                <div id="info"></div>
               </div>
         </section>
 
-        <div class="section-selecionado" id="info"></div>
+
         <section class="info fade-in">
             <h1 class="info-titulo">Mais Informações</h1>
             <div class="info1">
@@ -190,13 +192,15 @@
                     <div class="info1-titulo">FAÇA SEU PEDIDO PELO WHATSAPP!</div>
                     <div class="info-conteudo">
                         <img class="info2-img" src="/img/icon-whatsapp.png">
-                        <div class="info2-btn">Pedir Agora!</div>
+                        <div onclick="window.location.href='https://wa.link/f3d5m1';" class="info2-btn">Pedir Agora!</div>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <div class="btn-whatsapp-fixo" onclick="window.location.href='https://wa.link/f3d5m1';"></div>
     
     <footer>
         <div class="footer">
@@ -207,8 +211,8 @@
             <h3 class="footer-titulo">CONTATOS</h3>
             <h3 class="footer-escrito">TELEFONE : 1234-5678<br>WHATSAPP : 9 1234-5678<br>GMAIL: gmail@gmail.com</h3>
             <div class="footer-btn">
-                <img class="footer-rede-social" src="/img/icon-insta.png">
-                <img class="footer-rede-social" src="/img/icon-face.png">
+                <img class="footer-rede-social" onclick="window.location.href='https://www.instagram.com'" src="/img/icon-insta.png">
+                <img class="footer-rede-social" onclick="window.location.href='https://www.facebook.com'" src="/img/icon-face.png">
             </div>
         </div>
         <div class="footer2">

@@ -90,29 +90,6 @@ const swiper = new Swiper('.swiper-clientes', {
     },
 });
 
-
-// Header destaque-----------------------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.header-links a');
-    const sections = document.querySelectorAll('.section-selecionado');
-
-    function setActiveLink() {
-        let index = sections.length;
-
-        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-        links.forEach((link) => link.classList.remove('header-destaque'));
-        // Adiciona a classe de destaque apenas ao link correspondente
-        if (links[index]) {
-            links[index].classList.add('header-destaque');
-        }
-    }
-
-    setActiveLink();
-    window.addEventListener('scroll', setActiveLink);
-});
-
-
 // animacao fade in -----------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.fade-in');
