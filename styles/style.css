@@ -117,7 +117,12 @@ main{
 }
 
 /* Tamanho da tela */
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
+    body{
+        height: 5550px;
+    }
+}
+ @media screen and (min-width: 360px) and (max-width: 600px) {
     body{
         height: 5400px;
     }
